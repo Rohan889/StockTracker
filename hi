@@ -1,0 +1,15 @@
+df = pd.read_csv('data.txt',parse_dates =  True, index_col = 'Date')
+sma = btalib.sma(df,period = 2)
+print(sma.df)
+sma1 = sma.df
+sma1 = sma1.to_numpy()
+print(sma1[1][0])
+print(sma)
+#rsi = btalib.rsi(df)
+#rsi = rsi.df
+#print(rsi)
+#rsi1 = rsi.to_numpy()
+#print(rsi1[0][0])
+s = 3
+#print(s.strip()  + "5")
+
