@@ -10,6 +10,7 @@ from test import *
 file13 = open("data.txt", "w")
 file13.close()
 minute = 0 
+print(1)
 def connection():
     api = tradeapi.REST(API_KEY, SECRET_KEY, aplaca_endpoint)
     r = requests.get(aplaca_endpoint)
